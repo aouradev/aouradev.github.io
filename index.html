@@ -2,71 +2,59 @@
 <html>
 <head>
 <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+<title>Unity Methods</title>
 <style>
 body {
-    font-family: 'Inter';font-size: 22px;
+    font-family: 'Inter'; 
+    font-size: 22px; 
+    text-align: center;
 }
 </style>
 </head>
 <body>
 
 <h1>Custom Cosmetics</h1>
--- HOW TO MAKE CUSTOM COSMETICS --
+<p>MAKING PLAYFAB ITEM</p>
+<p>1. Go to playfab and make an item, add an ID, Price, and Display Name. You are basically done with this step.</p>
 <br>
-MAKING PLAYFAB ITEM
-    <br>
-Go to playfab and make a item, add a ID, Price and Display Name. Your basically done with this step.
+<p>MAKING IT EVALUATE AS A COSMETIC</p>
+<p>2. Go to Global, Photon Manager, CosmeticsController for newer builds. Or Photon Manager, Cosmetics Controller for older builds.</p>
+<p>3. Go to All Cosmetics, add a new item and assign everything accordingly except price and bundled items. Ex. item name: PEPSI, item slot: hat, picture: any picture (The item name is your playfab item id).</p>
 <br>
-MAKING IT EVALUATE AS A COSMETIC
+<p>MAKING A STAND</p>
+<p>4. Drag an item from Assets that is named CosmeticsStandButton.</p>
+<p>5. Unpack the prefab and add a Canvas component. Make the event camera the Main Camera from Scene.</p>
+<p>6. In the Head Model add the model of the item you wanna use. Also on the Head Model in Cosmetics add a new item and drag in the model inside the head model.</p>
+<p>7. Back in the main stand or CosmeticsStandButton make the This Cosmetic Name text box your item ID.</p>
 <br>
-Go to Global, Photon Manager, CosmeticsController for newer builds. Or Photon Manager, Cosmetics Controller for older builds.
-Go to All Cosmetics, add a new item and assign everything accrodingly except price and bundled items. Ex. item name: PEPSI, item slot: hat, picture: any pictrue (The item name is your playfab item id)
+<p>ADDING TO WARDROBES</p>
+<p>8. Copy your item from the Head Model and paste it to every Head Model, like checkout, city wardrobes, mountains, stump.</p>
+<p>9. Add the item to the Head Model cosmetics like in making a stand step 3.</p>
 <br>
-MAKING A STAND
-    <br>
-Drag an item from Assets that is named CosmeticsStandButton.
-Unpack the prefab and add a Canvas component. Make the event camera the Main Camera from Scene.
-In the Head Model add the model of the item you wanna use. Also on the Head Model in Cosmetics add a new item and drag in the model inside the head model.
-Back in the main stand or CosmeticsStandButton make the This Cosmetic Name text box your item ID.
+<p>MAKING IT WEARABLE</p>
+<p>10. Go in the OfflineVRRig and add the cosmetic wherever you want.</p>
+<p>11. Go to Actual Gorilla and in Cosmetics add the item.</p>
+<p>12. In Assets, search Gorilla Player Actual. Double click on it and do the same and then save afterwards.</p>
 <br>
-ADDING TO WAREDROBES
-    <br>
-Copy your item from the Head Model and paste it to every Head Model, like checkout, city wardrobes, mountains, stump.
-Add the item to the Head Model cosmetics like in making a stand step 3
+<h1>Getting Builds</h1>
+<p>GET ANY PCVR AND QUEST BUILD FOR RIPPING</p>
+<p>--------------MADE BY AOURA--------------</p>
+<p>1. Download this: <a href="https://github.com/ComputerElite/Oculus-downgrader">Oculus Downgrader</a></p>
+<p>2. INSTALL DOTNET 6.0 FROM MICROSOFT.</p>
+<p>3. Launch it and sign in using the instructions in the app.</p>
+<p>4. Select app from RIFT DATABASE!!!!.</p>
+<p>5. Select version, see versions from steamdb.</p>
+<p>6. Wait for it to download.</p>
+<p>7. In the app folder, find the download and rip it using assetripper.</p>
 <br>
-MAKING IT WEARABLE
-    <br>
-Go in the OfflineVRRig and add the cosmetic whereever you want.
-Go to Actual Gorilla and in Cosmetics add the item.
-In Assets, search Gorilla Player Actual. Double click on it and do the same and then save afterwards.</p>
-<br>
-<h1>Ripping</h1>
-<p>GET ANY PCVR AND QUEST BUILD FOR RIPPING
-    <br>
---------------MADE BY AOURA-------------------
-    <br>
-Download this: https://github.com/ComputerElite/Oculus-downgrader
-INSTALL DOTNET 6.0 FROM MICROSOFT
-Launch it and sign in using the instructions in the app
-Select app from RIFT DATABASE!!!!
-Select version, see versions from steamdb.
-Wait for it to download
-In the app folder, find the download and rip it using assetripper.</p>
-
 <h1>Freeze Hammer</h1>
-<p>1. Download the 2 scripts (FreezeHammer.cs, UnFreezeHammer.cs) from the discord server (discord.gg/beetleshelp) and import to unity.
-
-2. Go to assets, search for gorilla player or gorilla player networked depending on what update you are using.
-
-3. Open gorilla player or gorilla player nwtworked.
-
-4. Find the cosmetic you want. In this example, I will use the turkey leg as a freeze hammer, and the stick for unfreeze hammer.
-
-5. On the turkey leg, duplicate it and put the duplicated one under the original.
-
-6. On the duplicated one, add the FreezeHammer.cs script on to it and make sure you add a box collider with "is trigger" turned on. And also add gorilla player to the PhotonView.
-
-7. Do the same with the stick and with the UnFreezeHammer.cs script.</p>
+<p>1. Download the 2 scripts (FreezeHammer.cs, UnFreezeHammer.cs) from the discord server (<a href="https://discord.gg/beetleshelp">.gg/beetleshelp</a>) and import to unity.</p>
+<p>2. Go to assets, search for gorilla player or gorilla player networked depending on what update you are using.</p>
+<p>3. Open gorilla player or gorilla player networked.</p>
+<p>4. Find the cosmetic you want. In this example, I will use the turkey leg as a freeze hammer, and the stick for unfreeze hammer.</p>
+<p>5. On the turkey leg, duplicate it and put the duplicated one under the original.</p>
+<p>6. On the duplicated one, add the FreezeHammer.cs script on to it and make sure you add a box collider with "is trigger" turned on. And also add gorilla player to the PhotonView.</p>
+<p>7. Do the same with the stick and with the UnFreezeHammer.cs script.</p>
 
 </body>
 </html>
